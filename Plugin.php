@@ -4,7 +4,7 @@
  * 
  * @package FlowChart 
  * @author ZhangZijing(Venteto)
- * @version 1.2.0
+ * @version 1.2.1
  * @link https://v.meloduet.com
  */
 class FlowChart_Plugin implements Typecho_Plugin_Interface {
@@ -113,12 +113,12 @@ $fill="white";
             $fill="transparent";
         }
 		if (Helper::options()->plugin('FlowChart')->importJquery) {
-            echo '<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>';
+            echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>';
         }
          echo <<<HTML
          
-<script src="https://cdn.bootcss.com/raphael/2.2.7/raphael.min.js"></script>
-<script src="https://cdn.bootcss.com/flowchart/1.11.0/flowchart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.11.0/flowchart.min.js"></script>
 <script>
         $(function () {
 
